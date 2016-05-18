@@ -103,7 +103,40 @@ static rand + #97, #73
 static rand + #98, #48
 static rand + #99, #84
 
+
+S1L1 	: string "                                        "
+S1L2 	: string "                                        "
+S1L3 	: string "                                        "
+S1L4 	: string "@================== ===================@"
+S1L5 	: string "|                                      |"
+S1L6 	: string "|                                      |"
+S1L7 	: string "|                                      |"
+S1L8 	: string "|                                      |"
+S1L9 	: string "|                                      |"
+S1L10 	: string "| ==== |                        | ==== |"
+S1L11 	: string "|      |                        |      |"
+S1L12 	: string "@====\\ |======            ======| /====@"
+S1L13 	: string "     | |                        | |     "
+S1L14 	: string "     | | =====            ===== | |     "
+S1L15 	: string "=====/ |       |===--===|       | \\====="
+S1L16 	: string "         ===== |1 2  3 4| =====         "
+S1L17 	: string "=====\\ |       |========|         /====="
+S1L18 	: string "     | |======            ======| |     "
+S1L19 	: string "     | |       ==========       | |     "
+S1L20 	: string "@====/      |              |      \\====@"
+S1L21 	: string "|      === ================== ===      |"
+S1L22 	: string "| ==|              ||              |== |"
+S1L23 	: string "|   |     |                  |     |   |"
+S1L24 	: string "|== | ============    ============ | ==|"
+S1L25 	: string "|          |       @@       |          |"
+S1L26 	: string "| ========   ======||======   ======== |"
+S1L27 	: string "|                  ||                  |"
+S1L28 	: string "@==================@@==================@"
+S1L29	: string "                                        "
+S1L30	: string "                                        "
+
 ;---- declaracao de variaveis
+last_pos: var #1
 pos 	: var #1
 pacman 	: var #1
 pos_b	: var #1
@@ -117,13 +150,18 @@ main:
 	loadn r2, #'$' ;pac man
 	store pacman, r2
 	
-	loadn r0, #800
+	loadn r0, #615
 	store pos_b, r0
 	
 	loadn r0, #000
 	store seed, r0
 	store pos, r0
-	call ClearScreen
+
+	call ClearScreen	; Limpa a Tela
+	loadn r1, #S1L1 ; tela inicial
+	loadn r2, #0 ; cor da tela
+	loadn r0, #0; Posicao na tela onde a mensagem sera' escrita
+	call PrintScreen
 
 	loop:
 
@@ -133,12 +171,11 @@ main:
 		cmp r1, r2
 		ceq move_paqueman
 
-		loadn r1, #20
+		loadn r1, #10
 		mod r1, r0, r1
 		loadn r2, #000
 		cmp r1, r2
 		ceq move_blinkydu
-				
 		
 		call Delay ; LIGA PARA O DELAY
 				
@@ -229,10 +266,10 @@ ReadMove:
 	mod r4, r2, r3
 	loadn r3, #39
 	cmp r4, r3
-	loadn r5, #'$' ;pac man
-	store pacman, r5
 	jeq break;
 	
+	loadn r5, #'$' ;pac man
+	store pacman, r5
 	inc r2
 	jmp break;
 
@@ -285,9 +322,10 @@ move_paqueman:
 	
 	loadn r1, #' '
 	load r2, pos
+	store last_pos, r2
 	outchar r1, r2	
 	call ReadMove
-
+	call IS_VALID_POS
 	load r0, pos ; carrega a posessaum do paqueman
 	load r2, pacman ;carrega o caractere do pac man
 	loadn r1, #2816 ; cor
@@ -306,18 +344,24 @@ move_blinkydu:
 	push r1
 	push r2
 	
-	loadn r1, #' '
 	load r0, pos_b ; carrega a posessaum do paqueman
-	outchar r1, r0	
+	store last_pos, r0
 	
-	loadn r2, #'q' ;carrega o caractere do pac man
-	loadn r1, #2304 ; cor
-	
+
 	;aqui tenho que procurar uma pos aleatoria
 	call getRandMove
 	;aqui ja mudei a pos do fantasma
 	
-	store pos_b, r0
+	call IS_VALID_POS_B
+
+	load r0, last_pos ; carrega a posessaum do paqueman
+	loadn r1, #' '
+	outchar r1, r0	
+
+	loadn r2, #'q' ;carrega o caractere do pac man
+	loadn r1, #2304 ; cor
+
+	load r0, pos_b ; carrega a posessaum do paqueman
 	add r2, r2, r1 ;deixa o pac man amarelo
 	outchar r2, r0 ; impreme paqueman
 
@@ -329,9 +373,12 @@ move_blinkydu:
 getRandMove:
 	push r0
 	push r1
-
+	push r2
+	push r3
+	push r4
+	
 	call getRandNum
-	load r0, nrum
+	load r0, rnum	
 	loadn r1, #4
 	mod r0, r0, r1
 	 
@@ -351,8 +398,63 @@ getRandMove:
 	cmp r0, r1
 	jeq SWITCH_3
 	
+	jmp SWITCH_MOVE_END
 	
-	SWTCH_MOVE_END:
+	SWITCH_0:
+	load r1, pos_b
+	loadn r2, #40
+	add r1, r1, r2
+
+	loadn r3, #1159
+	cmp r3, r1
+	jel SWITCH_MOVE_END;
+
+	store pos_b, r1
+	jmp SWITCH_MOVE_END
+
+	SWITCH_1:
+	load r1, pos_b
+	loadn r2, #40
+	sub r1, r1, r2
+	
+	loadn r3, #39
+	cmp r1, r3
+	jel SWITCH_MOVE_END;
+
+	store pos_b, r1
+	jmp SWITCH_MOVE_END
+
+	SWITCH_2:
+	load r1, pos_b
+	inc r1	
+	loadn r3, #40
+	mod r4, r1, r3
+	loadn r3, #39
+	cmp r4, r3
+
+	jeq SWITCH_MOVE_END;
+	
+	store pos_b, r1
+	jmp SWITCH_MOVE_END
+
+	SWITCH_3:
+	load r1, pos_b
+	
+	loadn r3, #40
+	mod r4, r1, r3
+	loadn r3, #0
+	cmp r4, r3
+	jeq SWITCH_MOVE_END
+	
+	dec r1
+	store pos_b, r1
+	jmp SWITCH_MOVE_END
+	
+	
+	SWITCH_MOVE_END:
+	pop r3
+	pop r4
+	pop r2
 	pop r1
 	pop r0
 	rts
@@ -370,6 +472,7 @@ getRandNum:
 	add r0, r0, r1 ; r0 = vector[i]
 	
 	inc r1 ;i++
+	store seed, r1
 	cmp r1, r2 ;if (i < 100)
 	jle getRandNum_
 	loadn r1, #0 ;if (i >= 100), i = 0
@@ -377,10 +480,135 @@ getRandNum:
 	
 	getRandNum_:
 	loadi r1, r0
+	load r2, pos
+	add r1, r1, r2
+	inc r1
 	store rnum, r1
 
 	pop r2
 	pop r1;
 	pop r0;
+	pop fr
+	rts
+	
+	
+Imprimestr:	;  Rotina de Impresao de Mensagens:    r0 = Posicao da tela que o primeiro caractere da mensagem sera' impresso;  r1 = endereco onde comeca a mensagem; r2 = cor da mensagem.   Obs: a mensagem sera' impressa ate' encontrar "/0"
+	push r0	; protege o r0 na pilha para preservar seu valor
+	push r1	; protege o r1 na pilha para preservar seu valor
+	push r2	; protege o r1 na pilha para preservar seu valor
+	push r3	; protege o r3 na pilha para ser usado na subrotina
+	push r4	; protege o r4 na pilha para ser usado na subrotina
+	
+	loadn r3, #'\0'	; Criterio de parada
+
+ImprimestrLoop:	
+	loadi r4, r1
+	cmp r4, r3
+	jeq ImprimestrSai
+	add r4, r2, r4
+	outchar r4, r0
+	inc r0
+	inc r1
+	jmp ImprimestrLoop
+	
+ImprimestrSai:	
+	pop r4	; Resgata os valores dos registradores utilizados na Subrotina da Pilha
+	pop r3
+	pop r2
+	pop r1
+	pop r0
+	rts
+
+PrintScreen:
+	push fr ; protege registrador de frags
+	push r0 ; contador
+	push r1 ; endereco da mensagem
+	push r2 ; cor da mensagem
+	push r3 ;
+	push r4 ;
+	push r5 ;
+	
+	loadn r0, #0 ; contador
+	loadn r3, #1199 ; tamanho da tela
+	loadn r4, #41 ; incremento da memoria
+	loadn r5, #40 ; incremento do contador
+
+	PrintScreen_loop:	
+		call Imprimestr
+		add r1, r1, r4
+		add r0, r0, r5
+		cmp r0, r3
+		jel PrintScreen_loop	
+		
+	pop r5
+	pop r4
+	pop r3
+	pop r2
+	pop r1
+	pop r0
+	pop fr
+	rts
+
+IS_VALID_POS:
+	push fr
+	push r0
+	push r1
+	
+	; fazendo pos apontar para a posicao certa
+	load r0, pos
+	loadn r1, #40
+	div r1, r0, r1
+	add r0, r1, r0
+	; r1 recebe ponteiro
+	loadn r1, #S1L1
+	; r1 aponta para posicao certa
+	add r1, r1, r0
+	; r1 contem o caracter valido
+	; S1L1[POS] == ' '
+	loadi r1, r1
+	loadn r2, #' ' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N
+		;pos = last_pos;
+		load r0, last_pos
+		store pos, r0
+
+	IS_VALID_POS_N:
+
+	pop r1
+	pop r0
+	pop fr
+	rts
+	
+	
+	
+IS_VALID_POS_B:
+	push fr
+	push r0
+	push r1
+	
+	; fazendo pos apontar para a posicao certa
+	load r0, pos_b
+	loadn r1, #40
+	div r1, r0, r1
+	add r0, r1, r0
+	; r1 recebe ponteiro
+	loadn r1, #S1L1
+	; r1 aponta para posicao certa
+	add r1, r1, r0
+	; r1 contem o caracter valido
+	; S1L1[POS] == ' '
+	loadi r1, r1
+	loadn r2, #' ' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_B
+		;pos = last_pos;
+		load r0, last_pos
+		store pos_b, r0
+
+	IS_VALID_POS_N_B:
+
+	pop r1
+	pop r0
 	pop fr
 	rts
