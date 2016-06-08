@@ -245,7 +245,7 @@ ReadMove:
 	jeq break;
 
 	dec r2
-	loadn r5, #'A' ;pac man
+	loadn r5, #'a' ;pac man
 	store pacman, r5
 	jmp break;
 
@@ -256,7 +256,7 @@ ReadMove:
 
 	loadn r3, #40
 	add r2, r2, r3
-	loadn r5, #'S' ;pac man
+	loadn r5, #'s' ;pac man
 	store pacman, r5
 
 	jmp break;
@@ -268,7 +268,7 @@ ReadMove:
 	cmp r4, r3
 	jeq break;
 	
-	loadn r5, #'$' ;pac man
+	loadn r5, #'d' ;pac man
 	store pacman, r5
 	inc r2
 	jmp break;
@@ -280,7 +280,7 @@ ReadMove:
 
 	loadn r3, #40
 	sub r2, r2, r3
-	loadn r5, #'W' ;pac man
+	loadn r5, #'w' ;pac man
 	store pacman, r5
 
 	jmp break;
