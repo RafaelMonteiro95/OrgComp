@@ -103,42 +103,88 @@ static rand + #97, #73
 static rand + #98, #48
 static rand + #99, #84
 
-S1L1 	: string "cccccccccccccccccccccccccccccccccccccccc"
-S1L2 	: string "c PAC MAN        VER ALPHA             c"
+
+S1L1 	: string "cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc"
+S1L2 	: string "e PAC MAN        VER ALPHA             e"
 S1L3 	: string "cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc"
-S1L4 	: string "c                                      c"
-S1L5 	: string "c  cbbbbbbbbbcbbbbbbbbbbbbbcbbbbbbbbc  c"
-S1L6 	: string "c  e........*c.............c*.......e  c"
-S1L7 	: string "c  e.bbbbbbb...bbbbfgbbbbb...bbbbbb.e  c"
-S1L8 	: string "c  e*........c.....hi......c.......*e  c"
-S1L9 	: string "c  cccccc.cbbcbbbb.hi.bbbbbcbc.cbbbbc  c"
-S1L10 	: string "c       e.e..................e.e       c"
-S1L1 	: string "cbbbbbbbc.c.cbbbbbb--bbbbbbc.c.cbbbbbbbc"
-S1L2 	: string "c       ....e              e....       c"
-S1L3 	: string "cbbbbbbc.cc.e              e.cc.cbbbbbbc"
-S1L4 	: string "c      e.ee.cbbbbbbbbbbbbbbc.ee.e      c"
-S1L5 	: string "c      e.cc*................*cc.e      c"
-S1L6 	: string "c  cbbbc....bbbbbbbfgbbbbbbb....cbbbc  c"
-S1L7 	: string "c  e.....cc........hi........cc.....e  c"
-S1L8 	: string "c  e.bbbbccbbbbbbb.hi.bbbbbbbccbbbb.e  c"
-S1L9 	: string "c  e*..............................*e  c"
-S1L20 	: string "c  cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc  c"
-S1L1 	: string "c                                      c"
-S1L2 	: string "cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc"
-S1L3 	: string "c                                      c"
-S1L4 	: string "c   SCORE:                             c"
-S1L5 	: string "c                                      c"
-S1L6 	: string "c                                      c"
-S1L7 	: string "c                                      c"
-S1L8 	: string "cccccccccccccccccccccccccccccccccccccccc"
-S1L9 	: string "                                        "
+S1L4 	: string "e                                      e"
+S1L5 	: string "e  cbbbbbbbbbcbbbbbbbbbbbbbcbbbbbbbbc  e"
+S1L6 	: string "e  e........*c.............c*.......e  e"
+S1L7 	: string "e  e.bbbbbbb...bbbbfgbbbbb...bbbbbb.e  e"
+S1L8 	: string "e  e*........c.....hi......c.......*e  e"
+S1L9 	: string "e  cbbbbc.cbbcbbbb.hi.bbbbbcbc.cbbbbc  e"
+S1L10 	: string "e       e.e..................c.e       e"
+S1L11 	: string "cbbbbbbbc.c.cbbbbbb--bbbbbbc.c.cbbbbbbbc"
+S1L12 	: string "        ....e              e....        "
+S1L13 	: string "cbbbbbbc.cc.e              e.cc.cbbbbbbc"
+S1L14 	: string "e      e.cc.cbbbbbbbbbbbbbbc.cc.e      e"
+S1L15 	: string "e      e.cc*................*cc.e      e"
+S1L16 	: string "e  cbbbc....bbbbbbbfgbbbbbbb....cbbbc  e"
+S1L17 	: string "e  e.....cc........hi........cc.....e  e"
+S1L18 	: string "e  e.bbbbccbbbbbbb.hi.bbbbbbbccbbbb.e  e"
+S1L19 	: string "e  e*..............................*e  e"
+S1L20 	: string "e  cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc  e"
+S1L21 	: string "e                                      e"
+S1L22 	: string "cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc"
+S1L23 	: string "e                                      e"
+S1L24 	: string "e   SCORE:                             e"
+S1L25 	: string "e                                      e"
+S1L26 	: string "e                                      e"
+S1L27 	: string "e                                      e"
+S1L28 	: string "cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc"
+S1L29 	: string "                                        "
 S1L30 	: string "                                        "
 
+
+
+S2L1 	: string "                                        "
+S2L2 	: string "                                        "
+S2L3 	: string "                                        "
+S2L4 	: string "                                        "
+S2L5 	: string "                                        "
+S2L6 	: string "                                        "
+S2L7 	: string "                                        "
+S2L8 	: string "                                        "
+S2L9 	: string "                                        "
+S2L10 	: string "                                        "
+S2L11 	: string "                                        "
+S2L12 	: string "                                        "
+S2L13 	: string "                                        "
+S2L14 	: string "                                        "
+S2L15 	: string "                                        "
+S2L16 	: string "          GAME OVER NOB                 "
+S2L17 	: string "                                        "
+S2L18 	: string "                                        "
+S2L19 	: string "                                        "
+S2L20 	: string "                                        "
+S2L21 	: string "                                        "
+S2L22 	: string "                                        "
+S2L23 	: string "                                        "
+S2L24 	: string "                                        "
+S2L25 	: string "                                        "
+S2L26 	: string "                                        "
+S2L27 	: string "                                        "
+S2L28 	: string "                                        "
+S2L29	: string "                                        "
+S2L30	: string "                                        "
+
 ;---- declaracao de variaveis
+
+last_dir : var #1
+last_dig : var #1
+dir 	: var #1
 last_pos: var #1
+last_pos_b: var #1
+last_pos_c: var #1
+last_pos_i: var #1
+last_pos_p: var #1
 pos 	: var #1
+rpos 	: var #1
 pacman 	: var #1
 pos_b	: var #1
+pos_i	: var #1
+pos_p	: var #1
+pos_c	: var #1
 seed 	: var #1
 rnum 	: var #1
 ;---- Inicio do Programa Principal -----
@@ -146,39 +192,79 @@ rnum 	: var #1
 jmp main
 main:
 	;incializando variaveis
-	loadn r2, #'$' ;pac man
+	loadn r2, #'d' ;pac man
 	store pacman, r2
 	
-	loadn r0, #615
+	loadn r0, #497
+	store pos_p, r0
+	loadn r0, #499
+	store pos_i, r0
+	loadn r0, #501
+	store pos_c, r0
+	loadn r0, #503
 	store pos_b, r0
+	loadn r0, #739
+	store pos, r0
 	
+	loadn r0, #255
+	store last_dig, r0
 	loadn r0, #000
 	store seed, r0
-	store pos, r0
-
+	store dir, r0
+	store last_dir, r0
+	
 	call ClearScreen	; Limpa a Tela
 	loadn r1, #S1L1 ; tela inicial
 	loadn r2, #0 ; cor da tela
 	loadn r0, #0; Posicao na tela onde a mensagem sera' escrita
 	call PrintScreen
-
+	
 	loop:
 
-		loadn r1, #10
+		loadn r1, #50
 		mod r1, r0, r1
 		loadn r2, #000
 		cmp r1, r2
 		ceq move_paqueman
 
-		loadn r1, #10
+		loadn r1, #80
 		mod r1, r0, r1
 		loadn r2, #000
 		cmp r1, r2
 		ceq move_blinkydu
+		loadn r1, #80
+		mod r1, r0, r1
+		loadn r2, #000
+		cmp r1, r2
+		ceq move_pinkydu
+		loadn r1, #80
+		mod r1, r0, r1
+		loadn r2, #000
+		cmp r1, r2
+		ceq move_inkydu
+		loadn r1, #80
+		mod r1, r0, r1
+		loadn r2, #000
+		cmp r1, r2
+		ceq move_clydedu
 		
 		call Delay ; LIGA PARA O DELAY
-				
-		inc r0	
+		inc r0
+
+		load r2, pos
+		load r1, pos_b
+		cmp r2, r1
+		ceq end_game
+		load r1, pos_c
+		cmp r2, r1
+		ceq end_game
+		load r1, pos_i
+		cmp r2, r1
+		ceq end_game
+		load r1, pos_p
+		cmp r2, r1
+		ceq end_game
+	
 		jmp loop
 	halt
 
@@ -216,24 +302,34 @@ ReadMove:
 	
 	inchar r0
 
+	loadn r1, #255
+	cmp r1, r0
+	jne continue
+	;; IS_VALID_POS SOMAR A DIREÇÃO PARA FUNCIONAR
+	load r0, last_dir
+	
+	continue:
 	load r2, pos
-
+	
 	loadn r1, #'a'
 	cmp r0, r1
+	store dir, r1
 	jeq switch_A
 
 	loadn r1, #'s'
 	cmp r0, r1
+	store dir, r1
 	jeq switch_S
 		
 	loadn r1, #'d'
 	cmp r0, r1
+	store dir, r1
 	jeq switch_D
 
 	loadn r1, #'w'
 	cmp r0, r1
+	store dir, r1
 	jeq switch_W
-
 	jmp break;
 	
 	switch_A:
@@ -320,6 +416,8 @@ move_paqueman:
 	push r2
 	
 	loadn r1, #' '
+	load r2, dir
+	store last_dir, r2
 	load r2, pos
 	store last_pos, r2
 	outchar r1, r2	
@@ -332,7 +430,6 @@ move_paqueman:
 	add r2, r2, r1 ;deixa o pac man amarelo
 	outchar r2, r0 ; impreme paqueman
 	
-
 	pop r2
 	pop r1
 	pop r0
@@ -342,22 +439,25 @@ move_blinkydu:
 	push r0
 	push r1
 	push r2
-	
 	load r0, pos_b ; carrega a posessaum do paqueman
-	store last_pos, r0
+	store last_pos_b, r0
 	
 
+
+	store rpos, r0
 	;aqui tenho que procurar uma pos aleatoria
 	call getRandMove
 	;aqui ja mudei a pos do fantasma
-	
+	load r0, rpos
+	store pos_b, r0
+		
 	call IS_VALID_POS_B
 
-	load r0, last_pos ; carrega a posessaum do paqueman
+	load r0, last_pos_b ; carrega a posessaum do paqueman
 	loadn r1, #' '
 	outchar r1, r0	
 
-	loadn r2, #'q' ;carrega o caractere do pac man
+	loadn r2, #'%' ;carrega o caractere do pac man
 	loadn r1, #2304 ; cor
 
 	load r0, pos_b ; carrega a posessaum do paqueman
@@ -368,7 +468,110 @@ move_blinkydu:
 	pop r1
 	pop r0
 	rts
+
+move_inkydu:
+	push r0
+	push r1
+	push r2
 	
+	load r0, pos_i ; carrega a posessaum do paqueman
+	store last_pos_i, r0
+	
+	store rpos, r0
+	;aqui tenho que procurar uma pos aleatoria
+	call getRandMove
+	;aqui ja mudei a pos do fantasma
+	load r0, rpos
+	store pos_i, r0
+
+	call IS_VALID_POS_I
+
+	load r0, last_pos_i ; carrega a posessaum do paqueman
+	loadn r1, #' '
+	outchar r1, r0	
+
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #3584 ; cor
+
+	load r0, pos_i ; carrega a posessaum do paqueman
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	pop r2
+	pop r1
+	pop r0
+	rts
+
+move_pinkydu:
+	push r0
+	push r1
+	push r2
+	
+	load r0, pos_p ; carrega a posessaum do paqueman
+	store last_pos_p, r0
+	
+	store rpos, r0
+	;aqui tenho que procurar uma pos aleatoria
+	call getRandMove
+	;aqui ja mudei a pos do fantasma
+	load r0, rpos
+	store pos_p, r0
+
+	
+	call IS_VALID_POS_P
+
+	load r0, last_pos_p ; carrega a posessaum do paqueman
+	loadn r1, #' '
+	outchar r1, r0	
+
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #3328 ; cor
+
+	load r0, pos_p ; carrega a posessaum do paqueman
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	pop r2
+	pop r1
+	pop r0
+	rts
+
+move_clydedu:
+	push r0
+	push r1
+	push r2
+	
+	load r0, pos_c ; carrega a posessaum do paqueman
+	store last_pos_c, r0
+	
+
+	store rpos, r0
+	;aqui tenho que procurar uma pos aleatoria
+	call getRandMove
+	;aqui ja mudei a pos do fantasma
+	load r0, rpos
+	store pos_c, r0
+	
+	call IS_VALID_POS_C
+
+	load r0, last_pos_c ; carrega a posessaum do paqueman
+	loadn r1, #' '
+	outchar r1, r0	
+
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #2560 ; cor
+
+	load r0, pos_c ; carrega a posessaum do paqueman
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	pop r2
+	pop r1
+	pop r0
+	rts
+
+
+
 getRandMove:
 	push r0
 	push r1
@@ -400,7 +603,7 @@ getRandMove:
 	jmp SWITCH_MOVE_END
 	
 	SWITCH_0:
-	load r1, pos_b
+	load r1, rpos
 	loadn r2, #40
 	add r1, r1, r2
 
@@ -408,11 +611,11 @@ getRandMove:
 	cmp r3, r1
 	jel SWITCH_MOVE_END;
 
-	store pos_b, r1
+	store rpos, r1
 	jmp SWITCH_MOVE_END
 
 	SWITCH_1:
-	load r1, pos_b
+	load r1, rpos
 	loadn r2, #40
 	sub r1, r1, r2
 	
@@ -420,11 +623,11 @@ getRandMove:
 	cmp r1, r3
 	jel SWITCH_MOVE_END;
 
-	store pos_b, r1
+	store rpos, r1
 	jmp SWITCH_MOVE_END
 
 	SWITCH_2:
-	load r1, pos_b
+	load r1, rpos
 	inc r1	
 	loadn r3, #40
 	mod r4, r1, r3
@@ -433,11 +636,11 @@ getRandMove:
 
 	jeq SWITCH_MOVE_END;
 	
-	store pos_b, r1
+	store rpos, r1
 	jmp SWITCH_MOVE_END
 
 	SWITCH_3:
-	load r1, pos_b
+	load r1, rpos
 	
 	loadn r3, #40
 	mod r4, r1, r3
@@ -446,7 +649,7 @@ getRandMove:
 	jeq SWITCH_MOVE_END
 	
 	dec r1
-	store pos_b, r1
+	store rpos, r1
 	jmp SWITCH_MOVE_END
 	
 	
@@ -568,10 +771,61 @@ IS_VALID_POS:
 	loadn r2, #' ' 
 	cmp r1, r2
 	jeq IS_VALID_POS_N
+
+	loadn r2, #'.' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N
+
+	loadn r2, #'*' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N
 		;pos = last_pos;
 		load r0, last_pos
 		store pos, r0
+		load r0, last_dir
+		store dir, r0
 
+		loadn r1, #'a'
+		cmp r0, r1
+		store dir, r1
+		jeq switch_A_K
+
+		loadn r1, #'s'
+		cmp r0, r1
+		store dir, r1
+		jeq switch_S_K
+			
+		loadn r1, #'d'
+		cmp r0, r1
+		store dir, r1
+		jeq switch_D_K
+
+		loadn r1, #'w'
+		cmp r0, r1
+		store dir, r1
+		jeq switch_W_K
+		jmp IS_VALID_POS_N;
+		
+		switch_A_K:
+		loadn r5, #'a' ;pac man
+		store pacman, r5
+		jmp IS_VALID_POS_N;
+
+		switch_S_K:
+		loadn r5, #'s' ;pac man
+		store pacman, r5
+		jmp IS_VALID_POS_N;
+
+		switch_D_K:
+		loadn r5, #'d' ;pac man
+		store pacman, r5
+		jmp IS_VALID_POS_N;
+
+		switch_W_K:
+		loadn r5, #'w' ;pac man
+		store pacman, r5
+		jmp IS_VALID_POS_N;
+			
 	IS_VALID_POS_N:
 
 	pop r1
@@ -581,6 +835,135 @@ IS_VALID_POS:
 	
 	
 	
+IS_VALID_POS_I:
+	push fr
+	push r0
+	push r1
+	
+	; fazendo pos apontar para a posicao certa
+	load r0, pos_i
+	loadn r1, #40
+	div r1, r0, r1
+	add r0, r1, r0
+	; r1 recebe ponteiro
+	loadn r1, #S1L1
+	; r1 aponta para posicao certa
+	add r1, r1, r0
+	; r1 contem o caracter valido
+	; S1L1[POS] == ' '
+	loadi r1, r1
+	loadn r2, #' ' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_I
+
+	loadn r2, #'-' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_I
+
+	loadn r2, #'.' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_I
+
+	loadn r2, #'*' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_I
+		;pos = last_pos;
+		load r0, last_pos_i
+		store pos_i, r0
+
+	IS_VALID_POS_N_I:
+
+	pop r1
+	pop r0
+	pop fr
+	rts
+	
+IS_VALID_POS_C:
+	push fr
+	push r0
+	push r1
+	
+	; fazendo pos apontar para a posicao certa
+	load r0, pos_c
+	loadn r1, #40
+	div r1, r0, r1
+	add r0, r1, r0
+	; r1 recebe ponteiro
+	loadn r1, #S1L1
+	; r1 aponta para posicao certa
+	add r1, r1, r0
+	; r1 contem o caracter valido
+	; S1L1[POS] == ' '
+	loadi r1, r1
+	loadn r2, #' ' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_C
+
+	loadn r2, #'-' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_C
+
+	loadn r2, #'.' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_C
+
+	loadn r2, #'*' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_C
+		;pos = last_pos;
+		load r0, last_pos_c
+		store pos_c, r0
+
+	IS_VALID_POS_N_C:
+
+	pop r1
+	pop r0
+	pop fr
+	rts
+	
+IS_VALID_POS_P:
+	push fr
+	push r0
+	push r1
+	
+	; fazendo pos apontar para a posicao certa
+	load r0, pos_p
+	loadn r1, #40
+	div r1, r0, r1
+	add r0, r1, r0
+	; r1 recebe ponteiro
+	loadn r1, #S1L1
+	; r1 aponta para posicao certa
+	add r1, r1, r0
+	; r1 contem o caracter valido
+	; S1L1[POS] == ' '
+	loadi r1, r1
+	loadn r2, #' ' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_P
+
+	loadn r2, #'-' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_P
+
+	loadn r2, #'.' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_P
+
+	loadn r2, #'*' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_P
+		;pos = last_pos;
+		load r0, last_pos_p
+		store pos_p, r0
+
+	IS_VALID_POS_N_P:
+
+	pop r1
+	pop r0
+	pop fr
+	rts
+
 IS_VALID_POS_B:
 	push fr
 	push r0
@@ -601,8 +984,20 @@ IS_VALID_POS_B:
 	loadn r2, #' ' 
 	cmp r1, r2
 	jeq IS_VALID_POS_N_B
+
+	loadn r2, #'-' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_B
+
+	loadn r2, #'.' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_B
+
+	loadn r2, #'*' 
+	cmp r1, r2
+	jeq IS_VALID_POS_N_B
 		;pos = last_pos;
-		load r0, last_pos
+		load r0, last_pos_b
 		store pos_b, r0
 
 	IS_VALID_POS_N_B:
@@ -610,4 +1005,24 @@ IS_VALID_POS_B:
 	pop r1
 	pop r0
 	pop fr
+	rts
+
+end_game:
+	push fr
+	push r0
+	push r1
+	push r2
+	
+	call ClearScreen	; Limpa a Tela
+	loadn r1, #S2L1 ; tela inicial
+	loadn r2, #0 ; cor da tela
+	loadn r0, #0; Posicao na tela onde a mensagem sera' escrita
+	call PrintScreen
+	breakp;
+	pop r2
+	pop r1
+	pop r0
+	pop fr
+	pop r2
+	jmp main
 	rts
