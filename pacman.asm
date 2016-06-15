@@ -104,34 +104,34 @@ static rand + #98, #48
 static rand + #99, #84
 
 
-S1L1 	: string "cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc"
-S1L2 	: string "e PAC MAN        VER ALPHA             e"
-S1L3 	: string "cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc"
-S1L4 	: string "e                                      e"
-S1L5 	: string "e  cbbbbbbbbbcbbbbbbbbbbbbbcbbbbbbbbc  e"
-S1L6 	: string "e  e........*c.............c*.......e  e"
-S1L7 	: string "e  e.bbbbbbb...bbbbfgbbbbb...bbbbbb.e  e"
-S1L8 	: string "e  e*........c.....hi......c.......*e  e"
-S1L9 	: string "e  cbbbbc.cbbcbbbb.hi.bbbbbcbc.cbbbbc  e"
-S1L10 	: string "e       e.e..................c.e       e"
+S1L1 	: string "cccccccccccccccccccccccccccccccccccccccc"
+S1L2 	: string "c PAC MAN        VER ALPHA             c"
+S1L3 	: string "cccccccccccccccccccccccccccccccccccccccc"
+S1L4 	: string "c                                      c"
+S1L5 	: string "c  cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc  c"
+S1L6 	: string "c  e........*c.............c*.......e  c"
+S1L7 	: string "c  e.bbbbbbb...bbbbfgbbbbb...bbbbbb.e  c"
+S1L8 	: string "c  e*........c.....hi......c.......*e  c"
+S1L9 	: string "c  cccccc.cbbbbbbb.hi.bbbbbbbc.cbbbbc  c"
+S1L10 	: string "c       e.e..................c.e       c"
 S1L11 	: string "cbbbbbbbc.c.cbbbbbb--bbbbbbc.c.cbbbbbbbc"
 S1L12 	: string "        ....e              e....        "
 S1L13 	: string "cbbbbbbc.cc.e              e.cc.cbbbbbbc"
-S1L14 	: string "e      e.cc.cbbbbbbbbbbbbbbc.cc.e      e"
-S1L15 	: string "e      e.cc*................*cc.e      e"
-S1L16 	: string "e  cbbbc....bbbbbbbfgbbbbbbb....cbbbc  e"
-S1L17 	: string "e  e.....cc........hi........cc.....e  e"
-S1L18 	: string "e  e.bbbbccbbbbbbb.hi.bbbbbbbccbbbb.e  e"
-S1L19 	: string "e  e*..............................*e  e"
-S1L20 	: string "e  cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc  e"
-S1L21 	: string "e                                      e"
-S1L22 	: string "cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc"
-S1L23 	: string "e                                      e"
-S1L24 	: string "e   SCORE:                             e"
-S1L25 	: string "e                                      e"
-S1L26 	: string "e                                      e"
-S1L27 	: string "e                                      e"
-S1L28 	: string "cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc"
+S1L14 	: string "c      e.cc.cbbbbbbbbbbbbbbc.cc.e      c"
+S1L15 	: string "c      e.cc*................*cc.e      c"
+S1L16 	: string "c  cbbbc....bbbbbbbfgbbbbbbb....cbbbc  c"
+S1L17 	: string "c  e.....cc........hi........cc.....e  c"
+S1L18 	: string "c  e.bbbbccbbbbbbb.hi.bbbbbbbccbbbb.e  c"
+S1L19 	: string "c  e*..............................*e  c"
+S1L20 	: string "c  cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc  c"
+S1L21 	: string "c                                      c"
+S1L22 	: string "cccccccccccccccccccccccccccccccccccccccc"
+S1L23 	: string "c                                      c"
+S1L24 	: string "c   SCORE:                             c"
+S1L25 	: string "c                                      c"
+S1L26 	: string "c                                      c"
+S1L27 	: string "c                                      c"
+S1L28 	: string "cccccccccccccccccccccccccccccccccccccccc"
 S1L29 	: string "                                        "
 S1L30 	: string "                                        "
 
@@ -168,6 +168,39 @@ S2L28 	: string "                                        "
 S2L29	: string "                                        "
 S2L30	: string "                                        "
 
+MEML1 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML2 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML3 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML4 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML5 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML6 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML7 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML8 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML9 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML10 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML11 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML12 : string "~~~~~~~~\0\0\0\0\0              \0\0\0\0\0~~~~~~~~"
+MEML13 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0              \0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML14 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML15 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML16 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML17 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML18 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML19 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML20 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML21 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML22 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML23 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML24 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML25 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML26 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML27 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML28 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML29 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML30 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+
+
+
 ;---- declaracao de variaveis
 
 last_dir : var #1
@@ -181,6 +214,7 @@ last_pos_p: var #1
 pos 	: var #1
 rpos 	: var #1
 pacman 	: var #1
+score 	: var #1
 pos_b	: var #1
 pos_i	: var #1
 pos_p	: var #1
@@ -192,7 +226,7 @@ rnum 	: var #1
 jmp main
 main:
 	;incializando variaveis
-	loadn r2, #'d' ;pac man
+	loadn r2, #'$' ;pac man
 	store pacman, r2
 	
 	loadn r0, #497
@@ -211,14 +245,16 @@ main:
 	loadn r0, #000
 	store seed, r0
 	store dir, r0
+	store score, r0
 	store last_dir, r0
-	
+;	call ClearMem
 	call ClearScreen	; Limpa a Tela
 	loadn r1, #S1L1 ; tela inicial
 	loadn r2, #0 ; cor da tela
 	loadn r0, #0; Posicao na tela onde a mensagem sera' escrita
 	call PrintScreen
-	
+	call print_score
+		
 	loop:
 
 		loadn r1, #50
@@ -340,7 +376,7 @@ ReadMove:
 	jeq break;
 
 	dec r2
-	loadn r5, #'a' ;pac man
+	loadn r5, #'A' ;pac man
 	store pacman, r5
 	jmp break;
 
@@ -351,7 +387,7 @@ ReadMove:
 
 	loadn r3, #40
 	add r2, r2, r3
-	loadn r5, #'s' ;pac man
+	loadn r5, #'S' ;pac man
 	store pacman, r5
 
 	jmp break;
@@ -363,7 +399,7 @@ ReadMove:
 	cmp r4, r3
 	jeq break;
 	
-	loadn r5, #'d' ;pac man
+	loadn r5, #'$' ;pac man
 	store pacman, r5
 	inc r2
 	jmp break;
@@ -375,7 +411,7 @@ ReadMove:
 
 	loadn r3, #40
 	sub r2, r2, r3
-	loadn r5, #'w' ;pac man
+	loadn r5, #'W' ;pac man
 	store pacman, r5
 
 	jmp break;
@@ -404,6 +440,27 @@ ClearScreen:
 		outchar r1, r0 ; imprime espaco em branco
 		jnz ClearScreen_loop ; jump se zero
 
+	pop r1 ; 
+	pop r0 ; 
+	pop fr ; 
+	rts
+
+ClearMem:
+	push fr ; protege registrador de frags
+	push r0 ; contador para percorrer a tela 
+	push r1 ; valor do espaco em branco
+	push r2
+
+	loadn r0, #1230 ; tamanho da tela
+	loadn r1, #0 ; espaco em branco
+	loadn r2, #MEML1
+		ClearMem_loop: ; de 1200 ate 0
+		inc r2
+		storei r2, r0						
+		dec r0 ; decrementa contador
+		jnz ClearMem_loop ; jump se zero
+
+	pop r2
 	pop r1 ; 
 	pop r0 ; 
 	pop fr ; 
@@ -439,11 +496,11 @@ move_blinkydu:
 	push r0
 	push r1
 	push r2
+	push r3
+	
 	load r0, pos_b ; carrega a posessaum do paqueman
 	store last_pos_b, r0
 	
-
-
 	store rpos, r0
 	;aqui tenho que procurar uma pos aleatoria
 	call getRandMove
@@ -454,9 +511,25 @@ move_blinkydu:
 	call IS_VALID_POS_B
 
 	load r0, last_pos_b ; carrega a posessaum do paqueman
+	
+	loadn r1, #40
+	div r1, r0, r1
+	add r0, r1, r0
+	; r1 recebe ponteiro
+	loadn r1, #MEML1
+	; r1 aponta para posicao certa
+	add r1, r1, r0
+	; r1 contem o caracter valido
+	loadi r3, r1
 	loadn r1, #' '
-	outchar r1, r0	
+	loadn r2, #'\0' 
+	cmp r3, r2
+	jne SPACE
+	loadn r1, #'.'
 
+	SPACE:
+	load r0, last_pos_b ; carrega a posessaum do paqueman
+	outchar r1, r0	
 	loadn r2, #'%' ;carrega o caractere do pac man
 	loadn r1, #2304 ; cor
 
@@ -464,6 +537,7 @@ move_blinkydu:
 	add r2, r2, r1 ;deixa o pac man amarelo
 	outchar r2, r0 ; impreme paqueman
 
+	pop r3
 	pop r2
 	pop r1
 	pop r0
@@ -758,6 +832,14 @@ IS_VALID_POS:
 	
 	; fazendo pos apontar para a posicao certa
 	load r0, pos
+	loadn r1, #479
+	cmp r0, r1
+	jeq GOTOLEFT
+
+	loadn r1, #440
+	cmp r0, r1
+	jeq GOTORIGHT
+	
 	loadn r1, #40
 	div r1, r0, r1
 	add r0, r1, r0
@@ -807,26 +889,61 @@ IS_VALID_POS:
 		jmp IS_VALID_POS_N;
 		
 		switch_A_K:
-		loadn r5, #'a' ;pac man
+		loadn r5, #'A' ;pac man
 		store pacman, r5
 		jmp IS_VALID_POS_N;
 
 		switch_S_K:
-		loadn r5, #'s' ;pac man
+		loadn r5, #'S' ;pac man
 		store pacman, r5
 		jmp IS_VALID_POS_N;
 
 		switch_D_K:
-		loadn r5, #'d' ;pac man
+		loadn r5, #'$' ;pac man
 		store pacman, r5
 		jmp IS_VALID_POS_N;
 
 		switch_W_K:
-		loadn r5, #'w' ;pac man
+		loadn r5, #'W' ;pac man
 		store pacman, r5
 		jmp IS_VALID_POS_N;
 			
+	GOTOLEFT:
+	loadn r0, #440
+	store pos, r0
+	jmp IS_VALID_POS_N
+
+	GOTORIGHT:
+	loadn r0, #479
+	store pos, r0
+	jmp IS_VALID_POS_N
+	
+	
 	IS_VALID_POS_N:
+
+	; fazendo pos apontar para a posicao certa
+	load r0, pos
+	loadn r1, #40
+	div r1, r0, r1
+	add r0, r1, r0
+	; r1 recebe ponteiro
+	loadn r1, #MEML1
+	; r1 aponta para posicao certa
+	add r1, r1, r0
+	; r1 contem o caracter valido
+	; S1L1[POS] == 0
+	loadi r3, r1
+	loadn r2, #'\0' 
+	cmp r3, r2
+	jne END_ISVALID
+		load r0, score
+		inc r0
+		store score, r0
+		loadn r0, #140
+		storei r1, r0
+		call print_score
+
+	END_ISVALID:
 
 	pop r1
 	pop r0
@@ -1006,6 +1123,7 @@ IS_VALID_POS_B:
 	pop r0
 	pop fr
 	rts
+	
 
 end_game:
 	push fr
@@ -1025,4 +1143,53 @@ end_game:
 	pop fr
 	pop r2
 	jmp main
+	rts
+	
+	
+	
+print_score:
+;Primeiro numero a ser impresso (zero) esta na posicao 48 == Cod. ASCII do Zero
+;Por isso soma-se 48 ao valor a ser impresso
+;Abaixo tambem se encontra a logica para imprimir um numero de 2 digitos (tipo 21)
+; R5 contem um numero de ate' 2 digitos     e    R6 a posicao onde vai imprimir na tela
+	push r0
+	push r1
+	push r2
+	push r3
+	push r4
+	push r5
+	loadn r0, #100
+	loadn r2, #48
+	loadn r4, #931
+	load r5, score
+	
+	div r1, r5, r0	; Divide o numeo por 100 para imprimir a CENTENA
+	
+	add r3, r1, r2	; Soma 48 ao numero pra dar o Cod.  ASCII do numero
+	outchar r3, r4
+	
+	inc r4			; Incrementa a posicao na tela
+
+	mod r5, r5, r0
+	loadn r0, #10
+	div r1, r5, r0	; Divide o numeo por 10 para imprimir a dezena
+	
+	add r3, r1, r2	; Soma 48 ao numero pra dar o Cod.  ASCII do numero
+	outchar r3, r4
+	
+	inc r4			; Incrementa a posicao na tela
+	
+	mul r1, r1, r0	; Multiplica a dezena por 10
+	sub r1, r5, r1	; Pra subtrair do numero e pegar o resto
+	
+	add r1, r1, r2	; Soma 48 ao numero pra dar o Cod.  ASCII do numero
+	outchar r1, r4
+
+	pop r5
+	pop r4
+	pop r3
+	pop r2
+	pop r1
+	pop r0
+	
 	rts
