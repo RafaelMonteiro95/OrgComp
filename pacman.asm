@@ -1,5 +1,7 @@
 ; PAQUEMAN - JOGO DE COMER OUTRAS PARADA
 ; fazer comentarios explicando o jogo e comm nomes
+; edvsimoes@gmail.com
+; com .asm charmap e cpu.vhd
 
 ;lista de umeros aleatorios
 rand : var #100
