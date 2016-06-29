@@ -1,4 +1,5 @@
 ; PAQUEMAN - JOGO DE COMER OUTRAS PARADA
+; fazer comentarios explicando o jogo e comm nomes
 
 ;lista de umeros aleatorios
 rand : var #100
@@ -173,20 +174,20 @@ MEML2 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
 MEML3 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
 MEML4 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
 MEML5 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
-MEML6 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML6 	: string "\0\0\0\0\0\0\0\0\0\0\0\0*\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0*\0\0\0\0\0\0\0\0\0\0\0"
 MEML7 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
-MEML8 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML8 	: string "\0\0\0\0*\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0*\0\0\0\0"
 MEML9 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
 MEML10 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
 MEML11 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
 MEML12 : string "~~~~~~~~\0\0\0\0\0              \0\0\0\0\0~~~~~~~~"
 MEML13 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0              \0\0\0\0\0\0\0\0\0\0\0\0\0"
 MEML14 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
-MEML15 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML15 : string "\0\0\0\0\0\0\0\0\0\0\0*\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0*\0\0\0\0\0\0\0\0\0\0\0"
 MEML16 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
 MEML17 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
 MEML18 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
-MEML19 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+MEML19 : string "\0\0\0\0*\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0*\0\0\0\0"
 MEML20 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
 MEML21 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
 MEML22 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
@@ -203,30 +204,34 @@ MEML30 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
 
 ;---- declaracao de variaveis
 
-last_dir : var #1
-last_dig : var #1
-dir 	: var #1
-last_pos: var #1
-last_pos_b: var #1
-last_pos_c: var #1
-last_pos_i: var #1
-last_pos_p: var #1
-pos 	: var #1
-rpos 	: var #1
-pacman 	: var #1
-score 	: var #1
-pos_b	: var #1
-pos_i	: var #1
-pos_p	: var #1
-pos_c	: var #1
-seed 	: var #1
-rnum 	: var #1
+last_dir 	: var #1
+last_dig 	: var #1
+dir 		: var #1
+last_pos	: var #1
+last_pos_b	: var #1
+last_pos_c	: var #1
+last_pos_i	: var #1
+last_pos_p	: var #1
+pos 		: var #1
+rpos 		: var #1
+pacman 		: var #1
+score 		: var #1
+pos_b		: var #1
+pos_i		: var #1
+pos_p		: var #1
+pos_c		: var #1
+seed 		: var #1
+rnum 		: var #1
+ghost_eater	: var #1
+blinker		: var #1
+blinker_time: var #1
+
 ;---- Inicio do Programa Principal -----
 
 jmp main
 main:
 	;incializando variaveis
-	loadn r2, #'$' ;pac man
+	loadn r2, #'d' ;pac man
 	store pacman, r2
 	
 	loadn r0, #497
@@ -244,6 +249,7 @@ main:
 	store last_dig, r0
 	loadn r0, #000
 	store seed, r0
+	store ghost_eater, r0
 	store dir, r0
 	store score, r0
 	store last_dir, r0
@@ -257,28 +263,28 @@ main:
 		
 	loop:
 
-		loadn r1, #50
+		loadn r1, #10
 		mod r1, r0, r1
 		loadn r2, #000
 		cmp r1, r2
 		ceq move_paqueman
 
-		loadn r1, #80
+		loadn r1, #15
 		mod r1, r0, r1
 		loadn r2, #000
 		cmp r1, r2
 		ceq move_blinkydu
-		loadn r1, #80
+		loadn r1, #15
 		mod r1, r0, r1
 		loadn r2, #000
 		cmp r1, r2
 		ceq move_pinkydu
-		loadn r1, #80
+		loadn r1, #15
 		mod r1, r0, r1
 		loadn r2, #000
 		cmp r1, r2
 		ceq move_inkydu
-		loadn r1, #80
+		loadn r1, #15
 		mod r1, r0, r1
 		loadn r2, #000
 		cmp r1, r2
@@ -287,20 +293,8 @@ main:
 		call Delay ; LIGA PARA O DELAY
 		inc r0
 
-		load r2, pos
-		load r1, pos_b
-		cmp r2, r1
-		ceq end_game
-		load r1, pos_c
-		cmp r2, r1
-		ceq end_game
-		load r1, pos_i
-		cmp r2, r1
-		ceq end_game
-		load r1, pos_p
-		cmp r2, r1
-		ceq end_game
-	
+		call ghost_eater_checker
+		
 		jmp loop
 	halt
 
@@ -316,7 +310,7 @@ Delay:
 	
 	loadn r1, #5  ; a
    	Delay_volta2:				; contador de tempo quebrado em duas partes (dois loops de decremento)
-	loadn r0, #3000	; b
+	loadn r0, #30	; b
    	Delay_volta: 
 	dec r0					; (4*a + 6)b = 1000000  == 1 seg  em um clock de 1MHz
 	jnz Delay_volta	
@@ -376,7 +370,7 @@ ReadMove:
 	jeq break;
 
 	dec r2
-	loadn r5, #'A' ;pac man
+	loadn r5, #'a' ;pac man
 	store pacman, r5
 	jmp break;
 
@@ -387,7 +381,7 @@ ReadMove:
 
 	loadn r3, #40
 	add r2, r2, r3
-	loadn r5, #'S' ;pac man
+	loadn r5, #'s' ;pac man
 	store pacman, r5
 
 	jmp break;
@@ -399,7 +393,7 @@ ReadMove:
 	cmp r4, r3
 	jeq break;
 	
-	loadn r5, #'$' ;pac man
+	loadn r5, #'d' ;pac man
 	store pacman, r5
 	inc r2
 	jmp break;
@@ -411,7 +405,7 @@ ReadMove:
 
 	loadn r3, #40
 	sub r2, r2, r3
-	loadn r5, #'W' ;pac man
+	loadn r5, #'w' ;pac man
 	store pacman, r5
 
 	jmp break;
@@ -452,7 +446,7 @@ ClearMem:
 	push r2
 
 	loadn r0, #1230 ; tamanho da tela
-	loadn r1, #0 ; espaco em branco
+	loadn r1, #'\0' ; espaco em branco
 	loadn r2, #MEML1
 		ClearMem_loop: ; de 1200 ate 0
 		inc r2
@@ -483,7 +477,6 @@ move_paqueman:
 	load r0, pos ; carrega a posessaum do paqueman
 	load r2, pacman ;carrega o caractere do pac man
 	loadn r1, #2816 ; cor
-
 	add r2, r2, r1 ;deixa o pac man amarelo
 	outchar r2, r0 ; impreme paqueman
 	
@@ -524,15 +517,32 @@ move_blinkydu:
 	loadn r1, #' '
 	loadn r2, #'\0' 
 	cmp r3, r2
-	jne SPACE
+	jne SPACE_B
 	loadn r1, #'.'
 
-	SPACE:
+	SPACE_B:
 	load r0, last_pos_b ; carrega a posessaum do paqueman
 	outchar r1, r0	
-	loadn r2, #'%' ;carrega o caractere do pac man
-	loadn r1, #2304 ; cor
 
+	loadn r0, #1
+	load r1, ghost_eater
+	cmp r0, r1
+	loadn r1, #2304 ; cor
+	jne	GHOST_COLOR_B
+	loadn r1, #000 ; branco
+	loadn r2, #0
+	load r3, blinker
+	cmp r2, r3
+	jeq WHITE_B
+		loadn r1, #3072; azul
+		loadn r2, #0
+		store blinker, r2	
+		jmp GHOST_COLOR_B
+	WHITE_B:
+	loadn r2, #1
+	store blinker, r2	
+	GHOST_COLOR_B:
+	loadn r2, #'%' ;carrega o caractere do pac man
 	load r0, pos_b ; carrega a posessaum do paqueman
 	add r2, r2, r1 ;deixa o pac man amarelo
 	outchar r2, r0 ; impreme paqueman
@@ -561,12 +571,45 @@ move_inkydu:
 	call IS_VALID_POS_I
 
 	load r0, last_pos_i ; carrega a posessaum do paqueman
+
+	loadn r1, #40
+	div r1, r0, r1
+	add r0, r1, r0
+	; r1 recebe ponteiro
+	loadn r1, #MEML1
+	; r1 aponta para posicao certa
+	add r1, r1, r0
+	; r1 contem o caracter valido
+	loadi r3, r1
 	loadn r1, #' '
+	loadn r2, #'\0' 
+	cmp r3, r2
+	jne SPACE_I
+	loadn r1, #'.'
+
+	SPACE_I:
+	load r0, last_pos_i ; carrega a posessaum do paqueman
 	outchar r1, r0	
-
-	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r0, #1
+	load r1, ghost_eater
+	cmp r0, r1
 	loadn r1, #3584 ; cor
-
+	jne	GHOST_COLOR_I
+	loadn r1, #000 ; branco
+	loadn r2, #0
+	load r3, blinker
+	cmp r2, r3
+	jeq WHITE_I
+		loadn r1, #3072; azul
+		loadn r2, #0
+;		store blinker, r2	
+		jmp GHOST_COLOR_I
+	WHITE_I:
+	loadn r2, #1
+;	store blinker, r2	
+		
+	GHOST_COLOR_I:
+	loadn r2, #'%' ;carrega o caractere do pac man
 	load r0, pos_i ; carrega a posessaum do paqueman
 	add r2, r2, r1 ;deixa o pac man amarelo
 	outchar r2, r0 ; impreme paqueman
@@ -595,12 +638,45 @@ move_pinkydu:
 	call IS_VALID_POS_P
 
 	load r0, last_pos_p ; carrega a posessaum do paqueman
+
+	loadn r1, #40
+	div r1, r0, r1
+	add r0, r1, r0
+	; r1 recebe ponteiro
+	loadn r1, #MEML1
+	; r1 aponta para posicao certa
+	add r1, r1, r0
+	; r1 contem o caracter valido
+	loadi r3, r1
 	loadn r1, #' '
+	loadn r2, #'\0' 
+	cmp r3, r2
+	jne SPACE_P
+	loadn r1, #'.'
+
+	SPACE_P:
+	load r0, last_pos_p ; carrega a posessaum do paqueman
 	outchar r1, r0	
-
-	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r0, #1
+	load r1, ghost_eater
+	cmp r0, r1
 	loadn r1, #3328 ; cor
-
+	jne	GHOST_COLOR_P
+	loadn r1, #000 ; branco
+	loadn r2, #0
+	load r3, blinker
+	cmp r2, r3
+	jeq WHITE_P
+		loadn r1, #3072; azul
+		loadn r2, #0
+;		store blinker, r2	
+		jmp GHOST_COLOR_P
+	WHITE_P:
+	loadn r2, #1
+;	store blinker, r2	
+		
+	GHOST_COLOR_P:
+	loadn r2, #'%' ;carrega o caractere do pac man
 	load r0, pos_p ; carrega a posessaum do paqueman
 	add r2, r2, r1 ;deixa o pac man amarelo
 	outchar r2, r0 ; impreme paqueman
@@ -629,12 +705,45 @@ move_clydedu:
 	call IS_VALID_POS_C
 
 	load r0, last_pos_c ; carrega a posessaum do paqueman
+
+	loadn r1, #40
+	div r1, r0, r1
+	add r0, r1, r0
+	; r1 recebe ponteiro
+	loadn r1, #MEML1
+	; r1 aponta para posicao certa
+	add r1, r1, r0
+	; r1 contem o caracter valido
+	loadi r3, r1
 	loadn r1, #' '
+	loadn r2, #'\0' 
+	cmp r3, r2
+	jne SPACE_C
+	loadn r1, #'.'
+
+	SPACE_C:
+	load r0, last_pos_c ; carrega a posessaum do paqueman
 	outchar r1, r0	
-
-	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r0, #1
+	load r1, ghost_eater
+	cmp r0, r1
 	loadn r1, #2560 ; cor
-
+	jne	GHOST_COLOR_C
+	loadn r1, #000 ; branco
+	loadn r2, #0
+	load r3, blinker
+	cmp r2, r3
+	jeq WHITE_C
+		loadn r1, #3072; azul
+		loadn r2, #0
+;		store blinker, r2	
+		jmp GHOST_COLOR_C
+	WHITE_C:
+	loadn r2, #1
+;	store blinker, r2	
+		
+	GHOST_COLOR_C:
+	loadn r2, #'%' ;carrega o caractere do pac man
 	load r0, pos_c ; carrega a posessaum do paqueman
 	add r2, r2, r1 ;deixa o pac man amarelo
 	outchar r2, r0 ; impreme paqueman
@@ -860,6 +969,7 @@ IS_VALID_POS:
 
 	loadn r2, #'*' 
 	cmp r1, r2
+	jeq GHOST_EATER
 	jeq IS_VALID_POS_N
 		;pos = last_pos;
 		load r0, last_pos
@@ -889,22 +999,22 @@ IS_VALID_POS:
 		jmp IS_VALID_POS_N;
 		
 		switch_A_K:
-		loadn r5, #'A' ;pac man
+		loadn r5, #'a' ;pac man
 		store pacman, r5
 		jmp IS_VALID_POS_N;
 
 		switch_S_K:
-		loadn r5, #'S' ;pac man
+		loadn r5, #'s' ;pac man
 		store pacman, r5
 		jmp IS_VALID_POS_N;
 
 		switch_D_K:
-		loadn r5, #'$' ;pac man
+		loadn r5, #'d' ;pac man
 		store pacman, r5
 		jmp IS_VALID_POS_N;
 
 		switch_W_K:
-		loadn r5, #'W' ;pac man
+		loadn r5, #'w' ;pac man
 		store pacman, r5
 		jmp IS_VALID_POS_N;
 			
@@ -918,6 +1028,31 @@ IS_VALID_POS:
 	store pos, r0
 	jmp IS_VALID_POS_N
 	
+	GHOST_EATER:
+	load r0, pos
+	loadn r1, #40
+	div r1, r0, r1
+	add r0, r1, r0
+	; r1 recebe ponteiro
+	loadn r1, #MEML1
+	; r1 aponta para posicao certa
+	add r1, r1, r0
+	; r1 contem o caracter valido
+	; S1L1[POS] == 0
+	loadi r3, r1
+	loadn r2, #'*' 
+	cmp r3, r2
+	jeq GHOST_EATER_EQUAL
+
+	jmp IS_VALID_POS_N
+	GHOST_EATER_EQUAL:	
+	loadn r0, #1
+	store ghost_eater, r0	
+	store blinker, r0	
+	loadn r0, #500 ; tempo que pode comer
+	store blinker_time, r0
+	loadn r0, #140
+	storei r1, r0
 	
 	IS_VALID_POS_N:
 
@@ -1125,7 +1260,7 @@ IS_VALID_POS_B:
 	rts
 	
 
-end_game:
+END_GAME_POAR:
 	push fr
 	push r0
 	push r1
@@ -1136,14 +1271,12 @@ end_game:
 	loadn r2, #0 ; cor da tela
 	loadn r0, #0; Posicao na tela onde a mensagem sera' escrita
 	call PrintScreen
-	breakp;
 	pop r2
 	pop r1
 	pop r0
 	pop fr
-	pop r2
 	jmp main
-	rts
+
 	
 	
 	
@@ -1192,4 +1325,105 @@ print_score:
 	pop r1
 	pop r0
 	
+	rts
+	
+ghost_eater_checker:
+	push fr
+	push r0
+	push r1
+	push r2
+	push r3	
+	
+	load r2, pos
+	load r1, pos_b
+	cmp r2, r1
+	jeq CHECK_B
+
+	load r1, pos_c
+	cmp r2, r1	
+	jeq CHECK_C
+
+	load r1, pos_i
+	cmp r2, r1	
+	jeq CHECK_I
+
+	load r1, pos_p
+	cmp r2, r1
+	jeq CHECK_P
+
+	jmp END
+
+
+	CHECK_B:
+	loadn r0, #0
+	load r3, ghost_eater
+	cmp r0, r3
+	jeq GEC_ENDGAME
+	loadn r0, #501
+	store pos_b, r0
+	loadn r0, #10
+	load r1, score
+	add r1, r1, r0
+	store score, r1
+	call print_score
+	jmp END
+
+	CHECK_C:
+	loadn r0, #0
+	load r3, ghost_eater
+	cmp r0, r3
+	jeq GEC_ENDGAME
+	loadn r0, #501
+	store pos_c, r0
+	loadn r0, #10
+	load r1, score
+	add r1, r1, r0
+	store score, r1
+	call print_score
+	jmp END
+
+	CHECK_I:
+	loadn r0, #0
+	load r3, ghost_eater
+	cmp r0, r3
+	jeq GEC_ENDGAME
+	loadn r0, #501
+	store pos_i, r0
+	loadn r0, #10
+	load r1, score
+	add r1, r1, r0
+	store score, r1
+	call print_score
+	jmp END
+
+	CHECK_P:
+	loadn r0, #0
+	load r3, ghost_eater
+	cmp r0, r3
+	jeq GEC_ENDGAME
+	loadn r0, #501
+	store pos_p, r0
+	loadn r0, #10
+	load r1, score
+	add r1, r1, r0
+	store score, r1
+	call print_score
+	jmp END
+
+	GEC_ENDGAME:
+	jmp END_GAME_POAR
+	END:
+	load r0, blinker_time
+	dec r0
+	store blinker_time, r0
+	loadn r1, #0
+	cmp r1, r0
+	jnz GG_IZI
+		store ghost_eater, r1
+	GG_IZI:	
+	pop r3
+	pop r2
+	pop r1
+	pop r0
+	pop fr
 	rts
