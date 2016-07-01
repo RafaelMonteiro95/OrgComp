@@ -1,9 +1,20 @@
-; PAQUEMAN - JOGO DE COMER OUTRAS PARADA
+; Pacman - Jogo do Pacman implementado em assembly ICMC
+; Marcos Cesar Ribeiro de Camargo - 9278045
+; Rafael Augusto Monteiro - 9293095
+
+; a s d w - Caracteres do pacman.
+; - Caracter do fantasma.
+; A S D W - movimenta pacman
+
+
 ; fazer comentarios explicando o jogo e comm nomes
 ; edvsimoes@gmail.com
 ; com .asm charmap e cpu.vhd
+; TURMA 10HRS 4 FEIRA GRUPO 1
 
-;lista de umeros aleatorios
+
+
+; Lista de números aleatorios.
 rand : var #100
 static rand + #0, #46
 static rand + #1, #24
@@ -107,6 +118,7 @@ static rand + #98, #48
 static rand + #99, #84
 
 
+; Tela do jogo.
 S1L1 	: string "cccccccccccccccccccccccccccccccccccccccc"
 S1L2 	: string "c PAC MAN        VER ALPHA             c"
 S1L3 	: string "cccccccccccccccccccccccccccccccccccccccc"
@@ -139,7 +151,7 @@ S1L29 	: string "                                        "
 S1L30 	: string "                                        "
 
 
-
+; Tela de end game.
 S2L1 	: string "                                        "
 S2L2 	: string "                                        "
 S2L3 	: string "                                        "
@@ -155,8 +167,8 @@ S2L12 	: string "                                        "
 S2L13 	: string "                                        "
 S2L14 	: string "                                        "
 S2L15 	: string "                                        "
-S2L16 	: string "          GAME OVER NOB                 "
-S2L17 	: string "                                        "
+S2L16 	: string "               GAME OVER                "
+S2L17 	: string "       ENTER PARA JOGAR NOVAMENTE       "
 S2L18 	: string "                                        "
 S2L19 	: string "                                        "
 S2L20 	: string "                                        "
@@ -171,6 +183,74 @@ S2L28 	: string "                                        "
 S2L29	: string "                                        "
 S2L30	: string "                                        "
 
+; Tela de novo jogo.
+
+S3L1 	: string "                                        "
+S3L2 	: string "                                        "
+S3L3 	: string "                                        "
+S3L4 	: string "                                        "
+S3L5 	: string "                                        "
+S3L6 	: string "          PAC MAN   d   % % % %         "
+S3L7 	: string "                                        "
+S3L8 	: string "                                        "
+S3L9 	: string "                                        "
+S3L10 	: string "                                        "
+S3L11 	: string "                                        "
+S3L12 	: string "                                        "
+S3L13 	: string "                                        "
+S3L14 	: string "                                        "
+S3L15 	: string "       PRECIONE ENTER PARA INICIAR      "
+S3L16 	: string "                                        "
+S3L17 	: string "                                        "
+S3L18 	: string "                                        "
+S3L19 	: string "                                        "
+S3L20 	: string "                                        "
+S3L21 	: string "                                        "
+S3L22 	: string "                                        "
+S3L23 	: string "                                        "
+S3L24 	: string "                                        "
+S3L25 	: string "                                        "
+S3L26 	: string "                                        "
+S3L27 	: string "                                        "
+S3L28 	: string "                                        "
+S3L29	: string "                                        "
+S3L30	: string "                                        "
+
+
+; Tela de end game.
+S4L1 	: string "                                        "
+S4L2 	: string "                                        "
+S4L3 	: string "                                        "
+S4L4 	: string "                                        "
+S4L5 	: string "                                        "
+S4L6 	: string "                                        "
+S4L7 	: string "                                        "
+S4L8 	: string "                                        "
+S4L9 	: string "                                        "
+S4L10 	: string "                                        "
+S4L11 	: string "                                        "
+S4L12 	: string "                                        "
+S4L13 	: string "                                        "
+S4L14 	: string "                                        "
+S4L15 	: string "                                        "
+S4L16 	: string "              VOCE VENCEU               "
+S4L17 	: string "       ENTER PARA JOGAR NOVAMENTE       "
+S4L18 	: string "                                        "
+S4L19 	: string "                                        "
+S4L20 	: string "                                        "
+S4L21 	: string "                                        "
+S4L22 	: string "                                        "
+S4L23 	: string "                                        "
+S4L24 	: string "                                        "
+S4L25 	: string "                                        "
+S4L26 	: string "                                        "
+S4L27 	: string "                                        "
+S4L28 	: string "                                        "
+S4L29	: string "                                        "
+S4L30	: string "                                        "
+
+
+; Memória principal, para conferência de pontos.
 MEML1 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
 MEML2 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
 MEML3 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
@@ -202,40 +282,73 @@ MEML28 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
 MEML29 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
 MEML30 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
 
+; Backup da memória principal.
+; Memória principal, para conferência de pontos.
+BMEML1 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML2 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML3 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML4 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML5 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML6 	: string "\0\0\0\0\0\0\0\0\0\0\0\0*\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0*\0\0\0\0\0\0\0\0\0\0\0"
+BMEML7 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML8 	: string "\0\0\0\0*\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0*\0\0\0\0"
+BMEML9 	: string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML10 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML11 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML12 : string "~~~~~~~~\0\0\0\0\0              \0\0\0\0\0~~~~~~~~"
+BMEML13 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0              \0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML14 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML15 : string "\0\0\0\0\0\0\0\0\0\0\0*\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0*\0\0\0\0\0\0\0\0\0\0\0"
+BMEML16 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML17 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML18 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML19 : string "\0\0\0\0*\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0*\0\0\0\0"
+BMEML20 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML21 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML22 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML23 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML24 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML25 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML26 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML27 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML28 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML29 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+BMEML30 : string "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
 
-
-;---- declaracao de variaveis
-
-last_dir 	: var #1
-last_dig 	: var #1
-dir 		: var #1
-last_pos	: var #1
-last_pos_b	: var #1
-last_pos_c	: var #1
-last_pos_i	: var #1
-last_pos_p	: var #1
-pos 		: var #1
-rpos 		: var #1
-pacman 		: var #1
-score 		: var #1
-pos_b		: var #1
-pos_i		: var #1
-pos_p		: var #1
-pos_c		: var #1
-seed 		: var #1
-rnum 		: var #1
-ghost_eater	: var #1
-blinker		: var #1
-blinker_time: var #1
+; Declaracao de variaveis.	
+last_dir 	: var #1 ; Última direção do pacman.
+last_dig 	: var #1 ; Último caracter digitado.
+dir 		: var #1 ; Direção atual do pacman.
+pos 		: var #1 ; Posição atual do pacman. 
+pos_b		: var #1 ; Posição atual do blinkydu.
+pos_i		: var #1 ; Posição atual do inkydu.
+pos_p		: var #1 ; Posição atual do pinkydu.
+pos_c		: var #1 ; Posição atual do clydedu.
+last_pos	: var #1 ; Última posição do pacman.
+last_pos_b	: var #1 ; Última posição do blinkydu.
+last_pos_c	: var #1 ; Última posição do clydedu.
+last_pos_i	: var #1 ; Última posição do inkydu.
+last_pos_p	: var #1 ; Última posição do pinkydu.
+pacman 		: var #1 ; Caractere do pacman (pode mudar)
+score 		: var #1 ; Score total
+seed 		: var #1 ; Semente para o rand.
+rpos 		: var #1 ; Posição aleatória de um fantasma.
+rnum 		: var #1 ; Número aleatório.
+ghost_eater	: var #1 ; Verifica se o pacman pode comer os fantasmas
+blinker		: var #1 ; Fantasmas piscando.
+blinker_time: var #1 ; Tempo que os fantasmas piscam.
+eated		: var #1 ; Quantidade de bolinhas no mapa.
 
 ;---- Inicio do Programa Principal -----
 
 jmp main
 main:
-	;incializando variaveis
+	;Incializando variaveis.
 	loadn r2, #'d' ;pac man
 	store pacman, r2
 	
+	loadn r0, #192
+	store eated, r0
 	loadn r0, #497
 	store pos_p, r0
 	loadn r0, #499
@@ -246,7 +359,6 @@ main:
 	store pos_b, r0
 	loadn r0, #739
 	store pos, r0
-	
 	loadn r0, #255
 	store last_dig, r0
 	loadn r0, #000
@@ -255,7 +367,9 @@ main:
 	store dir, r0
 	store score, r0
 	store last_dir, r0
-;	call ClearMem
+
+	jmp start_menu
+	BACK_MAIN:
 	call ClearScreen	; Limpa a Tela
 	loadn r1, #S1L1 ; tela inicial
 	loadn r2, #0 ; cor da tela
@@ -263,6 +377,7 @@ main:
 	call PrintScreen
 	call print_score
 		
+	; Loop principal.
 	loop:
 
 		loadn r1, #10
@@ -292,7 +407,7 @@ main:
 		cmp r1, r2
 		ceq move_clydedu
 		
-		call Delay ; LIGA PARA O DELAY
+		call Delay ; call Delay
 		inc r0
 
 		call ghost_eater_checker
@@ -312,7 +427,7 @@ Delay:
 	
 	loadn r1, #5  ; a
    	Delay_volta2:				; contador de tempo quebrado em duas partes (dois loops de decremento)
-	loadn r0, #30	; b
+	loadn r0, #800	; b ;
    	Delay_volta: 
 	dec r0					; (4*a + 6)b = 1000000  == 1 seg  em um clock de 1MHz
 	jnz Delay_volta	
@@ -446,16 +561,21 @@ ClearMem:
 	push r0 ; contador para percorrer a tela 
 	push r1 ; valor do espaco em branco
 	push r2
-
+	push r3
+	
 	loadn r0, #1230 ; tamanho da tela
 	loadn r1, #'\0' ; espaco em branco
 	loadn r2, #MEML1
+	loadn r3, #BMEML1
 		ClearMem_loop: ; de 1200 ate 0
+		loadi r1, r3
+		storei r2, r1						
 		inc r2
-		storei r2, r0						
+		inc r3
 		dec r0 ; decrementa contador
 		jnz ClearMem_loop ; jump se zero
 
+	pop r3
 	pop r2
 	pop r1 ; 
 	pop r0 ; 
@@ -940,7 +1060,8 @@ IS_VALID_POS:
 	push fr
 	push r0
 	push r1
-	
+	push r2
+	push r3
 	; fazendo pos apontar para a posicao certa
 	load r0, pos
 	loadn r1, #479
@@ -1079,9 +1200,16 @@ IS_VALID_POS:
 		loadn r0, #140
 		storei r1, r0
 		call print_score
+		load r0, eated	
+		dec r0
+		store eated, r0
+		loadn r1, #0
+		cmp r0, r1
+		jeq END_GAME_WIN
 
 	END_ISVALID:
-
+	pop r3
+	pop r2
 	pop r1
 	pop r0
 	pop fr
@@ -1273,12 +1401,36 @@ END_GAME_POAR:
 	loadn r2, #0 ; cor da tela
 	loadn r0, #0; Posicao na tela onde a mensagem sera' escrita
 	call PrintScreen
+	call getchar
+	call ClearMem
 	pop r2
 	pop r1
 	pop r0
 	pop fr
 	jmp main
 
+END_GAME_WIN:
+	push fr
+	push r0
+	push r1
+	push r2
+	
+	call ClearScreen	; Limpa a Tela
+	loadn r1, #S4L1 ; tela inicial
+	loadn r2, #0 ; cor da tela
+	loadn r0, #0; Posicao na tela onde a mensagem sera' escrita
+	call PrintScreen
+	loadn r0, #13
+	loop_edwin:
+	inchar r1
+	cmp r0, r1
+	jne loop_edwin	
+	call ClearMem
+	pop r2
+	pop r1
+	pop r0
+	pop fr
+	jmp main
 	
 	
 	
@@ -1429,3 +1581,177 @@ ghost_eater_checker:
 	pop r0
 	pop fr
 	rts
+
+
+getchar:
+	push fr
+	push r0
+	push r1
+	
+	loadn r1, #255
+	
+	getchar_loop:
+		inchar r0
+		cmp r0, r1
+		jeq getchar_loop
+		
+	;store char, r0
+	
+	getchar_loop2:
+		inchar r0
+		cmp r0, r1
+		jne getchar_loop2
+	
+	pop r1
+	pop r0
+	pop fr
+	rts
+	
+	
+start_menu:
+	pop fr
+	pop r0
+	pop r1
+	pop r2
+	pop r3
+
+	call ClearScreen	; Limpa a Tela
+	loadn r1, #S3L1 ; tela inicial
+	loadn r2, #0 ; cor da tela
+	loadn r0, #0; Posicao na tela onde a mensagem sera' escrita
+	call PrintScreen
+	
+	loadn r0, #220 ; carrega a posessaum do paqueman
+	loadn r2, #'d' ;carrega o caractere do pac man
+	loadn r1, #2816 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+	
+	loop_sm:
+	loadn r0, #224 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #2304 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	loadn r0, #226 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #3584 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	loadn r0, #228 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #3328 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	loadn r0, #230 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #2560 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+		call Delay
+	call Delay
+	call Delay
+call Delay
+
+	loadn r0, #224 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #2560 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	loadn r0, #226 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #2304 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	loadn r0, #228 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #3584 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	loadn r0, #230 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #3328 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	call Delay
+	call Delay
+	call Delay
+	call Delay
+
+	loadn r0, #224 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #3328 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	loadn r0, #226 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #2560 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	loadn r0, #228 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #2304 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	loadn r0, #230 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #3584 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	call Delay
+	call Delay
+	call Delay
+	call Delay
+
+	loadn r0, #224 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #3584 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	loadn r0, #226 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #2304 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	loadn r0, #228 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #2560 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	loadn r0, #230 ; carrega a posessaum do paqueman
+	loadn r2, #'%' ;carrega o caractere do pac man
+	loadn r1, #3328 ; cor
+	add r2, r2, r1 ;deixa o pac man amarelo
+	outchar r2, r0 ; impreme paqueman
+
+	call Delay
+	call Delay
+	call Delay
+
+	loadn r0, #13
+	inchar r1
+	cmp r0, r1
+	jne loop_sm
+
+	
+	push r3
+	push r2
+	push r1
+	push r0
+	push fr
+	jmp BACK_MAIN
